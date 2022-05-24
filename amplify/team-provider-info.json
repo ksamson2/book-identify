@@ -1,0 +1,21 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-772workshop-dev-203823-authRole",
+      "UnauthRoleArn": "arn:aws:iam::207542081691:role/amplify-772workshop-dev-203823-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::207542081691:role/amplify-772workshop-dev-203823-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-772workshop-dev-203823-deployment",
+      "UnauthRoleName": "amplify-772workshop-dev-203823-unauthRole",
+      "StackName": "amplify-772workshop-dev-203823",
+      "StackId": "arn:aws:cloudformation:eu-west-1:207542081691:stack/amplify-772workshop-dev-203823/5e85f280-d9fe-11ec-9828-0a159081df35",
+      "AmplifyAppId": "d3aciw6giywxec"
+    },
+    "categories": {
+      "auth": {
+        "772workshop05a70060": {},
+        "true": {}
+      }
+    }
+  }
+}
