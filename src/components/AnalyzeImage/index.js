@@ -36,7 +36,7 @@ const AnalyzeImage = () => {
 		} else setError(true);
 	};
 	const getEntityValue = (entitiesResponse) => {
-		if (entitiesResponse != '') {
+		if (entitiesResponse !== '') {
 			console.log(entitiesResponse.entities[0].metadata.name);
 			return entitiesResponse.entities[0].metadata.name;
 		}
