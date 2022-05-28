@@ -45,8 +45,8 @@ const AnalyzeImage = () => {
 		<div>
 			{console.log(entitiesResponse)}
 			<div className='row'>
-				<div className='col s12 m6'>
-					<div className='card blue-grey darken-1'>
+				<div className='col s12 m6 offset-m3'>
+					<div className='card teal lighten-2'>
 						<div className='card-content white-text'>
 							<span className='card-title'>Identify celebrity</span>
 							<div className='file-field input-field'>
@@ -57,14 +57,16 @@ const AnalyzeImage = () => {
 									onChange={identifyCelebrity}
 								/>
 							</div>
-							<img src={imageSrc} />
+							<div className='imageContainer'>
+								<img className='image' src={imageSrc} />
+							</div>
 						</div>
 						<span> People in this image: </span>
 						{entitiesResponse === ''
 							? null
 							: entitiesResponse.entities.map((entity) => {
 									return (
-										<div className='chip' key={entity}>
+										<div className='chip' key={entity.metadata.name}>
 											{entity.metadata.name}{' '}
 										</div>
 									);
