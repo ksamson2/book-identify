@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Predictions } from '@aws-amplify/predictions';
 import 'materialize-css';
+import './style.css';
 
 export const isValidFileType = (image) => {
 	if (
@@ -41,6 +42,18 @@ const AnalyzeImage = () => {
 			return entitiesResponse.entities[0].metadata.name;
 		}
 	};
+	const displayError = (error) => {
+		const dismissError = () => {
+			setError(false);
+		};
+		return (
+			<div className='notification is-danger is-light'>
+				<button className='delete' onClick={dismissError}></button>
+				{error}
+			</div>
+		);
+	};
+
 	return (
 		<div>
 			{console.log(entitiesResponse)}
@@ -50,7 +63,12 @@ const AnalyzeImage = () => {
 						<div className='card-content white-text'>
 							<span className='card-title'>Identify celebrity</span>
 							<div className='file-field input-field'>
-								<span>Upload an image </span>
+								{error
+									? displayError('Please upload a jpeg or png file')
+									: null}
+								<button>
+									<span>Upload an image </span>
+								</button>
 								<input
 									className='file-input'
 									type='file'

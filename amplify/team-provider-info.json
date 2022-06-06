@@ -15,6 +15,12 @@
       "auth": {
         "772workshop05a70060": {},
         "true": {}
+      },
+      "interactions": {
+        "lexfc6fd182": {
+          "deploymentBucketName": "amplify-772workshop-dev-203823-deployment",
+          "s3Key": "amplify-builds/lexfc6fd182-71726943553865357552-build.zip"
+        }
       }
     }
   }

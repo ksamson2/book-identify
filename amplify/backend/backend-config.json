@@ -34,5 +34,12 @@
       "dependsOn": [],
       "identifyType": "identifyEntities"
     }
+  },
+  "interactions": {
+    "lexfc6fd182": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true
+    }
   }
 }

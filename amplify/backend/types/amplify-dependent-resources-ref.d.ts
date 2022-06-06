@@ -17,5 +17,12 @@ export type AmplifyDependentResourcesAttributes = {
             "celebrityDetectionEnabled": "string",
             "maxEntities": "string"
         }
+    },
+    "interactions": {
+        "lexfc6fd182": {
+            "Region": "string",
+            "BotName": "string",
+            "FunctionArn": "string"
+        }
     }
 }
