@@ -17,7 +17,10 @@ const AnalyzeImage = () => {
 	const [imageSrc, setImageSrc] = useState('');
 	const [error, setError] = useState(false);
 	const [entitiesResponse, setEntitiesResponse] = useState('');
+	const [loading, setLoading] = useState(false);
 	const identifyCelebrity = async (event) => {
+		setLoading(true);
+		setEntitiesResponse('');
 		const files = event.target.files;
 		const file = files[0];
 		if (isValidFileType(file)) {
@@ -32,24 +35,25 @@ const AnalyzeImage = () => {
 			})
 				.then((response) => {
 					setEntitiesResponse(response);
+					setLoading(false);
 				})
 				.catch((err) => setEntitiesResponse(JSON.stringify(err, null, 2)));
 		} else setError(true);
 	};
-	const getEntityValue = (entitiesResponse) => {
-		if (entitiesResponse !== '') {
-			console.log(entitiesResponse.entities[0].metadata.name);
-			return entitiesResponse.entities[0].metadata.name;
-		}
-	};
+
 	const displayError = (error) => {
 		const dismissError = () => {
 			setError(false);
 		};
 		return (
-			<div className='notification is-danger is-light'>
-				<button className='delete' onClick={dismissError}></button>
-				{error}
+			<div className='notification'>
+				<button
+					className='btn btn-small waves-effect waves-light'
+					onClick={dismissError}
+				>
+					<i className='material-icons right'>close</i>
+				</button>
+				<p> {error} </p>
 			</div>
 		);
 	};
@@ -66,8 +70,9 @@ const AnalyzeImage = () => {
 								{error
 									? displayError('Please upload a jpeg or png file')
 									: null}
-								<button>
-									<span>Upload an image </span>
+								<br />
+								<button className='upload-button'>
+									<span>upload an image </span>
 								</button>
 								<input
 									className='file-input'
@@ -79,7 +84,13 @@ const AnalyzeImage = () => {
 								<img className='image' src={imageSrc} />
 							</div>
 						</div>
-						<span> People in this image: </span>
+						<span className='entity-header'> People in this image: </span>
+						{loading ? (
+							<div className='progress'>
+								<div className='indeterminate'></div>
+							</div>
+						) : null}
+
 						{entitiesResponse === ''
 							? null
 							: entitiesResponse.entities.map((entity) => {

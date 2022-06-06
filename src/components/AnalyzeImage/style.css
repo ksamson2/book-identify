@@ -6,7 +6,29 @@
 	width: 80%;
 }
 
-.error {
-	background-color: rgba(220, 23, 43, 0.356);
+.notification {
+	padding: 20px;
+	border-color: #00897b;
+}
+
+.notification > p {
+	padding: 15px;
+	background-color: #00897b;
+	text-transform: uppercase;
+}
+.upload-button {
+	text-decoration: none;
+	color: #fff;
+	background-color: #00897b;
+	border: none;
+	padding: 20px;
 	text-align: center;
+	text-transform: uppercase;
+}
+
+.entity-header {
+	color: #fff;
+	padding-left: 15px;
+	padding-bottom: 40px;
+	font-size: 20px;
 }

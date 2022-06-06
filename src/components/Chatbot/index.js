@@ -1,5 +1,4 @@
 import React from 'react';
-import Amplify from 'aws-amplify';
 import { AmplifyChatbot } from '@aws-amplify/ui-react/legacy';
 
 const Chatbot = () => {

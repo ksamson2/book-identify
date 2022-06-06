@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import awsconfig from './aws-exports';
 import Chatbot from './components/Chatbot';
-import { Navbar } from 'react-materialize';
+import Navigation from './components/Navbar';
 
 Auth.configure(awsconfig);
 Amplify.configure(awsconfig);
@@ -18,7 +18,7 @@ function App() {
 	return (
 		<Router>
 			<div className='App'>
-				<Navbar />
+				<Navigation />
 				<Routes>
 					<Route path='/' element={<AnalyzeImage />} />
 					<Route path='/chatbot' element={<Chatbot />} />
