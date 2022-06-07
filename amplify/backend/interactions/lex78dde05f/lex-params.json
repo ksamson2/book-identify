@@ -1,5 +1,5 @@
 {
-    "resourceName": "lexfc6fd182",
+    "resourceName": "lex78dde05f",
     "intents": [
         {
             "cancelMessage": "Okay, I will not place your order.",
@@ -25,11 +25,19 @@
                     "prompt": "At what time do you want the {FlowerType} to be picked up?",
                     "required": true,
                     "customType": false
+                },
+                {
+                    "name": "WrappingType",
+                    "type": "WrappingType",
+                    "prompt": "What type of wrapping would you like? We offer standard, birthday, anniversary, condolence and celebratory.",
+                    "required": true,
+                    "customType": true
                 }
             ],
             "utterances": [
                 "I would like to order some flowers",
-                "I would like to pick up flowers"
+                "I would like to pick up flowers",
+                "Order some flowers"
             ],
             "intentName": "OrderFlowers",
             "newSlotTypes": [
@@ -47,5 +55,6 @@
     ],
     "outputVoice": "Matthew",
     "botName": "OrderFlowers",
-    "coppa": false
+    "coppa": false,
+    "shortId": "795f5b75"
 }

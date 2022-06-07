@@ -78,6 +78,8 @@ exports.handler = function(event, context) {
             
                 "I would like to pick up flowers",
             
+                "Order some flowers",
+            
             ],
         
             "fulfillmentActivity": {
@@ -131,6 +133,23 @@ exports.handler = function(event, context) {
                         "messages": [
                             {
                                 "content": "At what time do you want the {FlowerType} to be picked up?",
+                                "contentType": "PlainText"
+                            }
+                        ]
+                    }
+                },
+                
+                {
+                    "name": "WrappingType",
+                    "slotConstraint": "Required",
+                    "priority": 3,
+                    "slotType": "WrappingType",
+                    "slotTypeVersion": "$LATEST",
+                    "valueElicitationPrompt": {
+                        "maxAttempts": 3,
+                        "messages": [
+                            {
+                                "content": "What type of wrapping would you like? We offer standard, birthday, anniversary, condolence and celebratory.",
                                 "contentType": "PlainText"
                             }
                         ]
@@ -335,7 +354,7 @@ function ensureLambdaFunctionAccess(intent){
 
         const params = {
             FunctionName: lambdaName,
-            StatementId: `Lex-${intent.name}`+ "04b3dcd5",
+            StatementId: `Lex-${intent.name}`+ "795f5b75",
             Action: 'lambda:InvokeFunction',
             Principal: 'lex.amazonaws.com',
             SourceArn: `arn:aws:lex:${region}:${accountId}:intent:${intent.name}:*`,

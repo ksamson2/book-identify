@@ -19,7 +19,7 @@ export type AmplifyDependentResourcesAttributes = {
         }
     },
     "interactions": {
-        "lexfc6fd182": {
+        "lex78dde05f": {
             "Region": "string",
             "BotName": "string",
             "FunctionArn": "string"

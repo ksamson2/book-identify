@@ -17,9 +17,9 @@
         "true": {}
       },
       "interactions": {
-        "lexfc6fd182": {
+        "lex78dde05f": {
           "deploymentBucketName": "amplify-772workshop-dev-203823-deployment",
-          "s3Key": "amplify-builds/lexfc6fd182-71726943553865357552-build.zip"
+          "s3Key": "amplify-builds/lex78dde05f-5a726365575643744666-build.zip"
         }
       }
     }
