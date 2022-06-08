@@ -2,12 +2,17 @@
 
 - The two projects chosen were the chatbot and identifying celebrities. I built my application using AWS amplify ( I naturally needed to grab credentials from an AWS user to set this up). Following this, I initialized an amplify project. 
 
+### Identify celebrities
+
 The `identify celebrities` page identifies celebrities from an image the user uploads. This was built by adding the `Predictions` library to the project. 
 The resource I used to help set this up was the amplify docs:  https://docs.amplify.aws/lib/predictions/identify-entity/q/platform/js/
 
+### Chatbot
 
 The `chatbot` page integrates a chatbot with my application. This was built using the default AWS bot: Order Flowers that I modified a little. I created this bot via the Amplify CLI by adding the interactions library. 
 This is the resource I used to set this up: https://docs.amplify.aws/ui/interactions/chatbot/q/framework/react/
+
+### General notes 
 
 The identify-celebrities project is accessible at this URL:https://main.d2ehp8qfo8weri.amplifyapp.com/
 
