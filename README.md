@@ -18,14 +18,14 @@ The identify-celebrities project is accessible at this URL:https://main.d2ehp8qf
 
 Link to the video: https://drive.google.com/file/d/1-8yuaDVmIJEC-Ev1S4vAvbGl-PikHe8U/view?usp=sharing
 
-Things I forgot to mention in the video: 
+**Things I forgot to mention in the video:**
 
 Important commands: 
-`amplify init`
-`amplify add auth` -> used to add authentication for the project
-`amplify add predictions` -> used to add the Predictions library which provides Amplify's wrapper library for AWS Rekognition
-`amplify add interactions` -> used to add the interactions library which is Amplify's wrapper for AWS Lex
-`amplify update interactions` -> Used to create a new slot and sample utterance 
+* `amplify init`
+* `amplify add auth` -> used to add authentication for the project
+* `amplify add predictions` -> used to add the Predictions library which provides Amplify's wrapper library for AWS Rekognition
+* `amplify add interactions` -> used to add the interactions library which is Amplify's wrapper for AWS Lex
+* `amplify update interactions` -> Used to create a new slot and sample utterance 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
