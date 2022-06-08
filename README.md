@@ -26,6 +26,7 @@ Important commands:
 * `amplify add predictions` -> used to add the Predictions library which provides Amplify's wrapper library for AWS Rekognition
 * `amplify add interactions` -> used to add the interactions library which is Amplify's wrapper for AWS Lex
 * `amplify update interactions` -> Used to create a new slot and sample utterance 
+* The identify celebrities project will clear labels between uploading photos, so you don't see stale data when a new image is being tested
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
