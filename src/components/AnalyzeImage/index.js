@@ -38,7 +38,10 @@ const AnalyzeImage = () => {
 					setLoading(false);
 				})
 				.catch((err) => setEntitiesResponse(JSON.stringify(err, null, 2)));
-		} else setError(true);
+		} else {
+			setError(true);
+			setLoading(false);
+		}
 	};
 
 	const displayError = (error) => {
