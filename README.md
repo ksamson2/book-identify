@@ -16,11 +16,9 @@ This is the resource I used to set this up: https://docs.amplify.aws/ui/interact
 
 The identify-celebrities project is accessible at this URL:https://main.d2ehp8qfo8weri.amplifyapp.com/
 
-Link to the video: https://drive.google.com/file/d/1-8yuaDVmIJEC-Ev1S4vAvbGl-PikHe8U/view?usp=sharing
+Link to the video: https://drive.google.com/file/d/12BiZx_1fPK2MLtpk05VuWnFENKAnjrsA/view?usp=sharing
 
-**Things I forgot to mention in the video:**
-
-Important commands: 
+**Important commands: **
 * `amplify init`
 * `amplify add auth` -> used to add authentication for the project
 * `amplify add predictions` -> used to add the Predictions library which provides Amplify's wrapper library for AWS Rekognition
